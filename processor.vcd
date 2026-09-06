@@ -1,0 +1,186 @@
+$date
+	Sun Sep 06 13:11:46 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_pipelined_processor $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$scope module uut $end
+$var wire 1 ! clk $end
+$var wire 1 " reset $end
+$var reg 2 # ex_opcode [1:0] $end
+$var reg 3 $ ex_rd [2:0] $end
+$var reg 8 % ex_result [7:0] $end
+$var reg 8 & id_data1 [7:0] $end
+$var reg 8 ' id_data2 [7:0] $end
+$var reg 5 ( id_imm [4:0] $end
+$var reg 2 ) id_opcode [1:0] $end
+$var reg 3 * id_rd [2:0] $end
+$var reg 3 + id_rs1 [2:0] $end
+$var reg 3 , id_rs2 [2:0] $end
+$var reg 16 - if_instruction [15:0] $end
+$var reg 4 . if_pc [3:0] $end
+$var reg 4 / pc [3:0] $end
+$var reg 3 0 wb_rd [2:0] $end
+$var reg 8 1 wb_result [7:0] $end
+$var reg 1 2 wb_valid $end
+$var integer 32 3 i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10000 3
+x2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+bx &
+bx %
+bx $
+bx #
+1"
+0!
+$end
+#5000
+02
+b0 1
+b0 0
+b0 %
+b0 $
+b0 #
+b0 '
+b0 &
+b0 (
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 .
+b0 -
+b0 /
+1!
+#10000
+0!
+0"
+#15000
+b1 /
+b101001100000 -
+12
+1!
+#20000
+0!
+#25000
+b10 /
+b1 .
+b110010111000000 -
+b10100 '
+b1010 &
+b11 ,
+b10 +
+b1 *
+1!
+#30000
+0!
+#35000
+b11 /
+b10 .
+b1000011100000000 -
+b1010 '
+b11110 &
+b110 ,
+b101 +
+b100 *
+b1 )
+b11110 %
+b1 $
+1!
+#40000
+0!
+#45000
+b100 /
+b11 .
+b0 -
+b0 '
+b100 &
+b0 ,
+b111 +
+b0 *
+b10 )
+b10100 %
+b100 $
+b1 #
+b11110 1
+b1 0
+1!
+#50000
+0!
+#55000
+b101 /
+b100 .
+b0 &
+b0 +
+b0 )
+b1100100 %
+b0 $
+b10 #
+b10100 1
+b100 0
+1!
+#60000
+0!
+#65000
+b110 /
+b101 .
+b0 %
+b0 #
+b1100100 1
+b0 0
+1!
+#70000
+0!
+#75000
+b111 /
+b110 .
+b0 1
+1!
+#80000
+0!
+#85000
+b1000 /
+b111 .
+b1100100 '
+b1100100 &
+1!
+#90000
+0!
+#95000
+b1001 /
+b1000 .
+b0 '
+b0 &
+b11001000 %
+1!
+#100000
+0!
+#105000
+b1010 /
+b1001 .
+b0 %
+b11001000 1
+1!
+#110000
+0!
